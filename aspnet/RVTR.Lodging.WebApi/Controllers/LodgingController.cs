@@ -25,9 +25,9 @@ namespace RVTR.Lodging.WebApi.Controllers
     }
 
     [HttpGet]
-    public async Task<LodgingModel> Get()
+    public async Task<HotelModel> Get()
     {
-      return await Task.FromResult<LodgingModel>(new LodgingModel());
+      return await Task.FromResult<HotelModel>(new HotelModel());
     }
   }
 }
