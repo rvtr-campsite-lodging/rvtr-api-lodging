@@ -1,19 +1,19 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
 
 namespace RVTR.Lodging.ObjectModel.Models
 {
-  public class ImageModel : IValidatableObject
-  {
-    [Key]
-    public int ImageId { get; set; }
+    public class ImageModel : IValidatableObject
+    {
+        [Required(ErrorMessage = "The ImageId is required")]
+        public int ImageId { get; set; }
+        [Required(ErrorMessage = "The BlobUrl is required")]
+        [Url(ErrorMessage = "The BlobUrl is not of type Url")]
+        public string BlobUrl { get; set; }
 
-    [Required]
-    [Url]
-    public string BlobUrl { get; set; }
-
-    public ImageModel() {}
-
-    public IEnumerable<ValidationResult> Validate(ValidationContext validationContext) => throw new System.NotImplementedException();
-  }
+        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext){
+            return Enumerable.Empty<ValidationResult>();
+        }
+    }
 }
