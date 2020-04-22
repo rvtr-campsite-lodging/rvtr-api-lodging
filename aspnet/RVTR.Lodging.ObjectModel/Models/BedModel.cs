@@ -14,6 +14,7 @@ namespace RVTR.Lodging.ObjectModel.Models
         [Required(ErrorMessage = "The Size is required")]
         public string Size { get; set; }
         [Required(ErrorMessage = "The Amount is required")]
+        [Range(0, double.MaxValue, ErrorMessage = "The Amount should be positive")]
         public decimal Amount { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
@@ -24,10 +25,6 @@ namespace RVTR.Lodging.ObjectModel.Models
                 yield return new ValidationResult("the bed size must be King, Queen, Full, or Twin", new[] { "Size" });
             }
 
-            if (Decimal.Compare(Amount, 0.00m) <= 0)
-            {
-                yield return new ValidationResult("the amount must be greater than zero", new[] { "Amount" });
-            }
         }
 
     }

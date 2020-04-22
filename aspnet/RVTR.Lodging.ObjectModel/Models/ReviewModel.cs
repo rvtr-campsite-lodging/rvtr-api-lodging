@@ -20,7 +20,6 @@ namespace RVTR.Lodging.ObjectModel.Models
         public int Rating { get; set; }
         public string Content { get; set; }
         public DateTime Date { get; set; }
-        [Required(ErrorMessage = "The Hotel is required")]
         public HotelModel Hotel { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
