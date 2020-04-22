@@ -5,6 +5,25 @@ namespace RVTR.Lodging.ObjectModel.Models
 {
     public class RoomTypeModel : IValidatableObject
     {
+        /**
+        * Represents the type of room lodigng contains. Each type has an identifier along with a descripiction giving the base capacity priced
+        * at pricePerNight, and the maxCapacity which is priced at pricePerAdditionalPerson. It also contains a list of images and the number
+        * of rooms.
+        *
+        * ```yaml
+        * RoomTypeId: int;
+        * Name: string;
+        * Beds: List<BedModel>;
+        * Bathrooms: double;
+        * Bedrooms: double;
+        * BaseCapacity: int;
+        * MaxCapacity: int;
+        * PricePerNight: int;
+        * PricePerAdditionalPerson: int;
+        * Description: string;
+        * Images: List<Images>;
+        * ```
+        */
         [Required(ErrorMessage = "The RoomId is required")]
         public int RoomTypeId { get; set; }
         [Required(ErrorMessage = "The Name is required")]

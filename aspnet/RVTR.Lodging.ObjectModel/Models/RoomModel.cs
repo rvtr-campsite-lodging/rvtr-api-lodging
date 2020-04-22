@@ -6,6 +6,15 @@ namespace RVTR.Lodging.ObjectModel.Models
 {
     public class RoomModel : IValidatableObject
     {
+        /**
+        * Represents a room object that has an identifier, name, and the type of room it is (single bed, 4-person room, etc).
+        *
+        * ```yaml
+        * roomId: int;
+        * name: string;
+        * type: RoomType;
+        * ```
+        */
         [Required(ErrorMessage = "The RoomId is required")]
         public int RoomId { get; set; }
         [Required(ErrorMessage = "The Name is required")]
