@@ -1,31 +1,35 @@
-// using System.Collections.Generic;
-// using System.ComponentModel.DataAnnotations;
-// using RVTR.Lodging.ObjectModel.Models;
-// using Xunit;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using RVTR.Lodging.ObjectModel.Models;
+using Xunit;
 
-// namespace RVTR.Lodging.UnitTesting.Tests
-// {
+namespace RVTR.Lodging.UnitTesting.Tests
+{
 
-//     public class AmenityModelTest
-//     {
+    public class AmenityModelTest
+    {
+        [Theory]
+        [InlineData(1,"name1","category1",100,true,"positive test")]
+        [InlineData(-1,"name1","category1",100,false,"negative id")]
+        [InlineData(1,"name1@","category1",100,false," bad Name")]
+        [InlineData(1,"name1","category1@",100,false," bad Category")]
+        [InlineData(1,"name1","category1",-100,false," negativePrice per day")]
+        public void Validate_AmenityModel_Test(int id,string name,string category,decimal PPP,bool passFail,string paramBeingTested)
+        {
+            // Assemble
+            var Amenity = new AmenityModel()
+            {
+                AmenityId = id,
+                Name = name,
+                Category = category,
+                PricePerDay = PPP
+            };
 
-//         [Fact]
-//         public void Validate_AmenityModel_Test()
-//         {
-//             // Assemble
-//             AmenityModel Amenity = new AmenityModel()
-//             {
-//                 AmenityId = 1,
-//                 Name = "name1",
-//                 Category = "category1",
-//                 PricePerDay = 100.00m
-//             };
-//             // Act
-//             var validationResults = new List<ValidationResult>();
-//             var actual = Validator.TryValidateObject(Amenity, new ValidationContext(Amenity), validationResults, true);
-//             // Assert
-//             // Assert.True(actual, "Expected validation to succeed.");
-//             //Assert.Equal(0,validationResults.Count);
-//         }
-//     }
-// }
+             // Act
+           var validationResults = new List<ValidationResult>();
+            var actual = Validator.TryValidateObject(Amenity, new ValidationContext(Amenity), validationResults, true);
+            //assert
+            Assert.True(passFail.Equals(actual),"Validation testing " + paramBeingTested + " failed.");
+        }
+    }
+}

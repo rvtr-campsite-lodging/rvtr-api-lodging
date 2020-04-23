@@ -4,10 +4,10 @@ using System.Linq;
 
 namespace RVTR.Lodging.ObjectModel.Models
 {
-
     public class HotelModel : IValidatableObject
     {
         [Required(ErrorMessage = "The HotelId is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "The HotelId number cannot be negative")]
         public int HotelId { get; set; }
         public string Description { get; set; }
         public string Type { get; set; }
@@ -19,7 +19,7 @@ namespace RVTR.Lodging.ObjectModel.Models
         [Required(ErrorMessage = "The rooms are required")]
         public List<RoomModel> Rooms { get; set; }
         public List<ImageModel> Images { get; set; }
-        public IEnumerable<AmenityModel> Amenities { get; set; }
+        public List<AmenityModel> Amenities { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {

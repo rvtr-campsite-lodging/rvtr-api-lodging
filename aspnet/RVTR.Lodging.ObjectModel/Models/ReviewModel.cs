@@ -8,6 +8,7 @@ namespace RVTR.Lodging.ObjectModel.Models
     public class ReviewModel : IValidatableObject
     {
         [Required(ErrorMessage = "The ReviewId is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "The ReviewId number cannot be negative")]
         public int ReviewId { get; set; }
         [Required(ErrorMessage = "The UserId is required")]
         public int UserId { get; set; }

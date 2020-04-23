@@ -5,29 +5,11 @@ namespace RVTR.Lodging.ObjectModel.Models
 {
     public class RoomTypeModel : IValidatableObject
     {
-        /**
-        * Represents the type of room lodigng contains. Each type has an identifier along with a descripiction giving the base capacity priced
-        * at pricePerNight, and the maxCapacity which is priced at pricePerAdditionalPerson. It also contains a list of images and the number
-        * of rooms.
-        *
-        * ```yaml
-        * RoomTypeId: int;
-        * Name: string;
-        * Beds: List<BedModel>;
-        * Bathrooms: double;
-        * Bedrooms: double;
-        * BaseCapacity: int;
-        * MaxCapacity: int;
-        * PricePerNight: int;
-        * PricePerAdditionalPerson: int;
-        * Description: string;
-        * Images: List<Images>;
-        * ```
-        */
-        [Required(ErrorMessage = "The RoomId is required")]
+        [Required(ErrorMessage = "The RoomTypeId is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "The RoomTypeId number amount cannot be negative")]
         public int RoomTypeId { get; set; }
         [Required(ErrorMessage = "The Name is required")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The Name should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The Name should be alphanumeric")]
         public string Name { get; set; }
         [Required(ErrorMessage = "The Beds list is required")]
         public List<BedModel> Beds { get; set; }
@@ -53,10 +35,6 @@ namespace RVTR.Lodging.ObjectModel.Models
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            if (Beds.Count == 0)
-            {
-                yield return new ValidationResult("The Beds list must contain at least one bed", new[] { "Beds" });
-            }
             if (Bedrooms * 10 % 5 != 0)
             {
                 yield return new ValidationResult("The Bedrooms amount must be integer or end in .5 (examples: 1, 2.5, 3.5", new[] { "Bedrooms" });
