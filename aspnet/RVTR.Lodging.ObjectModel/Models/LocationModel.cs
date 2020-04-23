@@ -8,20 +8,21 @@ namespace RVTR.Lodging.ObjectModel.Models
     public class LocationModel : IValidatableObject
     {
         [Required(ErrorMessage = "The LocationId is required")]
+        [Range(0, int.MaxValue, ErrorMessage = "The LocationId number amount cannot be negative")]
         public int LocationId { get; set; }
         [Required(ErrorMessage = "Address1 is required")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The Address1 should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The Address1 should be alphanumeric")]
         public string Address1 { get; set; }
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The Address2 should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The Address2 should be alphanumeric")]
         public string Address2 { get; set; }
         [Required(ErrorMessage = "The City is required")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The City should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The City should be alphanumeric")]
         public string City { get; set; }
         [Required(ErrorMessage = "The State is requiered")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The State should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The State should be alphanumeric")]
         public string State { get; set; }
         [Required(ErrorMessage = "The Zip is required")]
-        [RegularExpression(@"^[a-zA-Z0-9]*$", ErrorMessage = "The Zip should be alphanumeric")]
+        [RegularExpression(@"^[a-zA-Z0-9 ]*$", ErrorMessage = "The Zip should be alphanumeric")]
         [MinLength(5),MaxLength(5)]
         public string Zip { get; set; }
         [Range(-90, 90, ErrorMessage = "The Latitude should be between -90 and 90")]
