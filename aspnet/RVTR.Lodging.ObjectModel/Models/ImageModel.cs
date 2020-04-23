@@ -10,15 +10,22 @@ namespace RVTR.Lodging.ObjectModel.Models
     /// </summary>
     public class ImageModel : IValidatableObject
     {
+        /// <summary>
+        /// Id of Image.
+        /// </summary>
+        /// <value></value>
         [Required(ErrorMessage = "The ImageId is required")]
         [Range(0, int.MaxValue, ErrorMessage = "The ImageId number cannot be negative")]
         public int ImageId { get; set; }
+        /// <summary>
+        /// URL to the blob of image.
+        /// </summary>
+        /// <value></value>
         [Required(ErrorMessage = "The BlobUrl is required")]
         [Url(ErrorMessage = "The BlobUrl is not of type Url")]
         public string BlobUrl { get; set; }
-
         /// <summary>
-        /// Validates that the BlobUrl is an image
+        /// Validates that the BlobUrl is an image.
         /// </summary>
         /// <param name="validationContext"></param>
         /// <returns></returns>
