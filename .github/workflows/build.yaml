@@ -1,16 +1,37 @@
+env:
+  WORKING_DIRECTORY: aspnet
+
 jobs:
+  restore:
+    name: restore_aspnet
+    runs-on: ubuntu-18.04
+    steps:
+      - name: actions_checkout
+        uses: actions/checkout@v2.1.0
+      - name: dotnet_cache
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.nuget/packages
+          key: aspnet-${{ hashFiles('**/packages.lock.json') }}
+      - name: dotnet_restore
+        run: dotnet restore
+        working-directory: ${{ env.WORKING_DIRECTORY }}
+
   build:
     name: build_job
+    needs: restore
     runs-on: ubuntu-18.04
     steps:
       - name: build_script
         run: echo 'build script'
+
   test:
     name: test_job
     runs-on: ubuntu-18.04
     steps:
       - name: test_script
         run: echo 'test script'
+
   analyze:
     name: analyze_job
     needs: [build, test]
@@ -18,6 +39,7 @@ jobs:
     steps:
       - name: analyze_script
         run: echo 'analyze script'
+
   pack:
     name: pack_job
     needs: [analyze]
