@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Globalization;
+using System;
 using System.Linq;
 
 namespace RVTR.Lodging.ObjectModel.Models
@@ -58,15 +59,24 @@ namespace RVTR.Lodging.ObjectModel.Models
         /// <value></value>
         [Range(-180, 180, ErrorMessage = "The Longitude should be between -180 and 180")]
         public double longitude { get; set; }
-        /// <summary>
-        /// Culture Information of Location.
-        /// </summary>
-        /// <value></value>
-        public CultureInfo CultureInfo { get; set; }
+        public string CultureInfo { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
-            return Enumerable.Empty<ValidationResult>();
+          List<ValidationResult> results = new List<ValidationResult>();
+          if (!DoesCultureExist(CultureInfo))
+          {
+            results.Add(new ValidationResult("Error initializing culture"));
+            return results;
+          }
+          results.Add(ValidationResult.Success);
+          return results;
+        }
+
+        private bool DoesCultureExist(string cultureName)
+        {
+          return System.Globalization.CultureInfo.GetCultures(CultureTypes.AllCultures)
+            .Any(culture => string.Equals(culture.Name, cultureName, StringComparison.CurrentCultureIgnoreCase));
         }
     }
 }
