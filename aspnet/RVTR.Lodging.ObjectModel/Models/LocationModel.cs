@@ -29,7 +29,7 @@ namespace RVTR.Lodging.ObjectModel.Models
         public double latitude { get; set; }
         [Range(-180, 180, ErrorMessage = "The Longitude should be between -180 and 180")]
         public double longitude { get; set; }
-        public CultureInfo CultureInfo { get; set; }
+        public string CultureInfo { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
