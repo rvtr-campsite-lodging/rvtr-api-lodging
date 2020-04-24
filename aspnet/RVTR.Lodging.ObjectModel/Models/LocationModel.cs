@@ -62,7 +62,7 @@ namespace RVTR.Lodging.ObjectModel.Models
         /// Culture Information of Location.
         /// </summary>
         /// <value></value>
-        public CultureInfo CultureInfo { get; set; }
+        public string CultureInfo { get; set; }
 
         public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
         {
