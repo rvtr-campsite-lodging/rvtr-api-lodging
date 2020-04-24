@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using System.Linq;
 using RVTR.Lodging.DataContext.Repositories;
 using RVTR.Lodging.ObjectModel.Models;
@@ -27,6 +28,7 @@ namespace RVTR.Lodging.UnitTesting.Tests
               },
                 Images = new List<ImageModel>(),
                 Amenities = new List<AmenityModel>()
+
             };
 
             var context = new ValidationContext(sut, null, null);
@@ -56,7 +58,7 @@ namespace RVTR.Lodging.UnitTesting.Tests
 
             Assert.False(Validator.TryValidateObject(sut, context, results, true));
 
-            Assert.Equal(results.Count, 4);
+            Assert.Equal(4, results.Count);
 
             for (int i = 0; i < expectedErrors.Length; i++)
             {
