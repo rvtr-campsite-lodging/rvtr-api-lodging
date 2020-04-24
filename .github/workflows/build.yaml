@@ -18,12 +18,20 @@ jobs:
         working-directory: ${{ env.WORKING_DIRECTORY }}
 
   build:
-    name: build_job
+    name: build_aspnet
     needs: restore
     runs-on: ubuntu-18.04
     steps:
-      - name: build_script
-        run: echo 'build script'
+      - name: actions_checkout
+        uses: actions/checkout@v2.1.0
+      - name: dotnet_cache
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.nuget/packages
+          key: aspnet-${{ hashFiles('**/packages.lock.json') }}
+      - name: dotnet_build
+        run: dotnet build
+        working-directory: ${{ env.WORKING_DIRECTORY }}
 
   test:
     name: test_job
