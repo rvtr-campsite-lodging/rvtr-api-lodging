@@ -1,0 +1,2078 @@
+{
+  "RVTR.Lodging.WebApi.dll": {
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebApi/Program.cs": {
+      "RVTR.Lodging.WebApi.Program": {
+        "System.Void RVTR.Lodging.WebApi.Program::Main(System.String[])": {
+          "Lines": {
+            "15": 0,
+            "16": 0,
+            "17": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder RVTR.Lodging.WebApi.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebApi/Startup.cs": {
+      "RVTR.Lodging.WebApi.Startup": {
+        "Microsoft.Extensions.Configuration.IConfiguration RVTR.Lodging.WebApi.Startup::get_Configuration()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebApi.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "25": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebApi.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 0,
+            "48": 0,
+            "49": 0,
+            "51": 0,
+            "52": 0,
+            "53": 0,
+            "54": 0,
+            "55": 0
+          },
+          "Branches": [
+            {
+              "Line": 42,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebApi.Startup::.ctor(Microsoft.Extensions.Configuration.IConfiguration)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebApi/Controllers/LodgingController.cs": {
+      "RVTR.Lodging.WebApi.Controllers.LodgingController": {
+        "System.Void RVTR.Lodging.WebApi.Controllers.LodgingController::.ctor(Microsoft.Extensions.Logging.ILogger`1<RVTR.Lodging.WebApi.Controllers.LodgingController>,RVTR.Lodging.DataContext.Repositories.IUnitOfWork)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.WebApi.Controllers.LodgingController/<Get>d__3": {
+        "System.Void RVTR.Lodging.WebApi.Controllers.LodgingController/<Get>d__3::MoveNext()": {
+          "Lines": {
+            "29": 0,
+            "30": 0,
+            "31": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "RVTR.Lodging.DataContext.dll": {
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.DataContext/Repositories/Repository.cs": {
+      "RVTR.Lodging.DataContext.Repositories.Repository`1": {
+        "System.Boolean RVTR.Lodging.DataContext.Repositories.Repository`1::Delete(System.Int32)": {
+          "Lines": {
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 61,
+              "EndOffset": 63,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 39,
+              "Offset": 61,
+              "EndOffset": 87,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 20,
+              "EndOffset": 88,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Boolean RVTR.Lodging.DataContext.Repositories.Repository`1::Insert(TEntity)": {
+          "Lines": {
+            "54": 1,
+            "55": 1,
+            "56": 1,
+            "57": 1,
+            "58": 1,
+            "59": 1,
+            "60": 1,
+            "63": 0,
+            "64": 1
+          },
+          "Branches": [
+            {
+              "Line": 57,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 57,
+              "Offset": 37,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.IEnumerable`1<TEntity> RVTR.Lodging.DataContext.Repositories.Repository`1::Select()": {
+          "Lines": {
+            "71": 0,
+            "72": 0,
+            "73": 0
+          },
+          "Branches": []
+        },
+        "TEntity RVTR.Lodging.DataContext.Repositories.Repository`1::Select(System.Int32)": {
+          "Lines": {
+            "81": 0,
+            "82": 0,
+            "83": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean RVTR.Lodging.DataContext.Repositories.Repository`1::Update(TEntity)": {
+          "Lines": {
+            "91": 0,
+            "92": 0,
+            "93": 0,
+            "95": 0,
+            "96": 0,
+            "97": 0,
+            "98": 0,
+            "100": 0,
+            "101": 0
+          },
+          "Branches": [
+            {
+              "Line": 95,
+              "Offset": 37,
+              "EndOffset": 39,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 37,
+              "EndOffset": 62,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.DataContext.Repositories.Repository`1::.ctor(RVTR.Lodging.DataContext.Databases.LodgingDbContext)": {
+          "Lines": {
+            "20": 16,
+            "21": 16,
+            "22": 16,
+            "23": 16
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.DataContext.Repositories.Repository`1::.ctor()": {
+          "Lines": {
+            "25": 39
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.DataContext/Repositories/UnitOfWork.cs": {
+      "RVTR.Lodging.DataContext.Repositories.UnitOfWork": {
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.HotelModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Hotels()": {
+          "Lines": {
+            "13": 3
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.RoomModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Rooms()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.RoomTypeModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_RoomTypes()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.ImageModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Images()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.ReviewModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Reviews()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.LocationModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Locations()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.AmenityModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Amenities()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.DataContext.Repositories.Repository`1<RVTR.Lodging.ObjectModel.Models.BedModel> RVTR.Lodging.DataContext.Repositories.UnitOfWork::get_Beds()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.DataContext.Repositories.UnitOfWork::Commit()": {
+          "Lines": {
+            "43": 1,
+            "44": 1,
+            "45": 1
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.DataContext.Repositories.UnitOfWork::.ctor(RVTR.Lodging.DataContext.Databases.LodgingDbContext)": {
+          "Lines": {
+            "26": 2,
+            "27": 2,
+            "28": 2,
+            "29": 2,
+            "30": 2,
+            "31": 2,
+            "32": 2,
+            "33": 2,
+            "34": 2,
+            "35": 2,
+            "36": 2,
+            "37": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.DataContext/Databases/LodgingDbContext.cs": {
+      "RVTR.Lodging.DataContext.Databases.LodgingDbContext": {
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.HotelModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Hotels()": {
+          "Lines": {
+            "9": 4
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.RoomModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Rooms()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.RoomTypeModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_RoomTypes()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.ImageModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Images()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.ReviewModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Reviews()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.LocationModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Locations()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.AmenityModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Amenities()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.EntityFrameworkCore.DbSet`1<RVTR.Lodging.ObjectModel.Models.BedModel> RVTR.Lodging.DataContext.Databases.LodgingDbContext::get_Beds()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.DataContext.Databases.LodgingDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "24": 1,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "28": 1,
+            "29": 1,
+            "30": 1
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.DataContext.Databases.LodgingDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<RVTR.Lodging.DataContext.Databases.LodgingDbContext>)": {
+          "Lines": {
+            "18": 9
+          },
+          "Branches": []
+        }
+      }
+    }
+  },
+  "RVTR.Lodging.ObjectModel.dll": {
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/AmenityModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.AmenityModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.AmenityModel::get_AmenityId()": {
+          "Lines": {
+            "11": 10
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.AmenityModel::get_Name()": {
+          "Lines": {
+            "14": 10
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.AmenityModel::get_Category()": {
+          "Lines": {
+            "16": 10
+          },
+          "Branches": []
+        },
+        "System.Decimal RVTR.Lodging.ObjectModel.Models.AmenityModel::get_PricePerDay()": {
+          "Lines": {
+            "18": 10
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> RVTR.Lodging.ObjectModel.Models.AmenityModel::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "21": 1,
+            "22": 1,
+            "23": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/BedModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.BedModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.BedModel::get_BedId()": {
+          "Lines": {
+            "14": 8
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.BedModel::get_Size()": {
+          "Lines": {
+            "16": 13
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.BedModel::get_NumberOfBeds()": {
+          "Lines": {
+            "19": 8
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.ObjectModel.Models.BedModel/<Validate>d__12": {
+        "System.Boolean RVTR.Lodging.ObjectModel.Models.BedModel/<Validate>d__12::MoveNext()": {
+          "Lines": {
+            "22": 2,
+            "24": 2,
+            "25": 1,
+            "26": 1,
+            "27": 1,
+            "29": 2
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 79,
+              "EndOffset": 81,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 102,
+              "EndOffset": 104,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 56,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 79,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 102,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 133,
+              "EndOffset": 135,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 24,
+              "Offset": 133,
+              "EndOffset": 183,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/HotelModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.HotelModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.HotelModel::get_HotelId()": {
+          "Lines": {
+            "11": 6
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.HotelModel::get_Description()": {
+          "Lines": {
+            "12": 0
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.HotelModel::get_Type()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.ObjectModel.Models.LocationModel RVTR.Lodging.ObjectModel.Models.HotelModel::get_Location()": {
+          "Lines": {
+            "15": 5
+          },
+          "Branches": []
+        },
+        "System.Double RVTR.Lodging.ObjectModel.Models.HotelModel::get_Area()": {
+          "Lines": {
+            "17": 6
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.ReviewModel> RVTR.Lodging.ObjectModel.Models.HotelModel::get_Reviews()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.RoomModel> RVTR.Lodging.ObjectModel.Models.HotelModel::get_Rooms()": {
+          "Lines": {
+            "20": 7
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.ImageModel> RVTR.Lodging.ObjectModel.Models.HotelModel::get_Images()": {
+          "Lines": {
+            "21": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.AmenityModel> RVTR.Lodging.ObjectModel.Models.HotelModel::get_Amenities()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.ObjectModel.Models.HotelModel/<Validate>d__36": {
+        "System.Boolean RVTR.Lodging.ObjectModel.Models.HotelModel/<Validate>d__36::MoveNext()": {
+          "Lines": {
+            "25": 2,
+            "26": 2,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 2
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 53,
+              "EndOffset": 55,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 14,
+              "EndOffset": 95,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 26,
+              "Offset": 53,
+              "EndOffset": 103,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/ImageModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.ImageModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.ImageModel::get_ImageId()": {
+          "Lines": {
+            "15": 8
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.ImageModel::get_BlobUrl()": {
+          "Lines": {
+            "18": 13
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.ObjectModel.Models.ImageModel/<Validate>d__8": {
+        "System.Boolean RVTR.Lodging.ObjectModel.Models.ImageModel/<Validate>d__8::MoveNext()": {
+          "Lines": {
+            "26": 2,
+            "27": 2,
+            "28": 1,
+            "29": 1,
+            "30": 1,
+            "31": 2
+          },
+          "Branches": [
+            {
+              "Line": 26,
+              "Offset": 14,
+              "EndOffset": 25,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 27,
+              "Offset": 56,
+              "EndOffset": 58,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 79,
+              "EndOffset": 81,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 102,
+              "EndOffset": 104,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 56,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 79,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 102,
+              "EndOffset": 130,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 133,
+              "EndOffset": 135,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 1
+            },
+            {
+              "Line": 26,
+              "Offset": 14,
+              "EndOffset": 175,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 27,
+              "Offset": 133,
+              "EndOffset": 183,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 2
+            }
+          ]
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/LocationModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.LocationModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.LocationModel::get_LocationId()": {
+          "Lines": {
+            "13": 14
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_Address1()": {
+          "Lines": {
+            "16": 14
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_Address2()": {
+          "Lines": {
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_City()": {
+          "Lines": {
+            "21": 14
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_State()": {
+          "Lines": {
+            "24": 14
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_Zip()": {
+          "Lines": {
+            "28": 14
+          },
+          "Branches": []
+        },
+        "System.Double RVTR.Lodging.ObjectModel.Models.LocationModel::get_latitude()": {
+          "Lines": {
+            "30": 0
+          },
+          "Branches": []
+        },
+        "System.Double RVTR.Lodging.ObjectModel.Models.LocationModel::get_longitude()": {
+          "Lines": {
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.LocationModel::get_CultureInfo()": {
+          "Lines": {
+            "33": 9
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> RVTR.Lodging.ObjectModel.Models.LocationModel::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "36": 2,
+            "37": 2,
+            "39": 2,
+            "40": 2,
+            "41": 2,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "47": 2,
+            "48": 2,
+            "49": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/ReviewModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.ReviewModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.ReviewModel::get_ReviewId()": {
+          "Lines": {
+            "12": 4
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.ReviewModel::get_UserId()": {
+          "Lines": {
+            "14": 4
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.ReviewModel::get_HotelId()": {
+          "Lines": {
+            "16": 4
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.ReviewModel::get_UserName()": {
+          "Lines": {
+            "18": 4
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.ReviewModel::get_Rating()": {
+          "Lines": {
+            "21": 4
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.ReviewModel::get_Content()": {
+          "Lines": {
+            "22": 0
+          },
+          "Branches": []
+        },
+        "System.DateTime RVTR.Lodging.ObjectModel.Models.ReviewModel::get_Date()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.ObjectModel.Models.HotelModel RVTR.Lodging.ObjectModel.Models.ReviewModel::get_Hotel()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> RVTR.Lodging.ObjectModel.Models.ReviewModel::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "27": 1,
+            "28": 1,
+            "29": 1
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.ObjectModel.Models.ReviewModel::.ctor()": {
+          "Lines": {
+            "30": 2,
+            "31": 2,
+            "32": 2,
+            "33": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/RoomModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.RoomModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomModel::get_RoomId()": {
+          "Lines": {
+            "11": 8
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.RoomModel::get_Name()": {
+          "Lines": {
+            "14": 8
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.ObjectModel.Models.RoomTypeModel RVTR.Lodging.ObjectModel.Models.RoomModel::get_Type()": {
+          "Lines": {
+            "16": 8
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.IEnumerable`1<System.ComponentModel.DataAnnotations.ValidationResult> RVTR.Lodging.ObjectModel.Models.RoomModel::Validate(System.ComponentModel.DataAnnotations.ValidationContext)": {
+          "Lines": {
+            "18": 2,
+            "19": 2,
+            "20": 2
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.ObjectModel/Models/RoomTypeModel.cs": {
+      "RVTR.Lodging.ObjectModel.Models.RoomTypeModel": {
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_RoomTypeId()": {
+          "Lines": {
+            "10": 18
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Name()": {
+          "Lines": {
+            "13": 18
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.BedModel> RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Beds()": {
+          "Lines": {
+            "15": 18
+          },
+          "Branches": []
+        },
+        "System.Double RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Bathrooms()": {
+          "Lines": {
+            "18": 22
+          },
+          "Branches": []
+        },
+        "System.Double RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Bedrooms()": {
+          "Lines": {
+            "21": 22
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_BaseCapacity()": {
+          "Lines": {
+            "24": 22
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_MaxCapacity()": {
+          "Lines": {
+            "27": 22
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_PricePerNight()": {
+          "Lines": {
+            "30": 22
+          },
+          "Branches": []
+        },
+        "System.Int32 RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_PricePerAdditionalPerson()": {
+          "Lines": {
+            "32": 22
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Description()": {
+          "Lines": {
+            "33": 0
+          },
+          "Branches": []
+        },
+        "System.Collections.Generic.List`1<RVTR.Lodging.ObjectModel.Models.ImageModel> RVTR.Lodging.ObjectModel.Models.RoomTypeModel::get_Images()": {
+          "Lines": {
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.ObjectModel.Models.RoomTypeModel/<Validate>d__44": {
+        "System.Boolean RVTR.Lodging.ObjectModel.Models.RoomTypeModel/<Validate>d__44::MoveNext()": {
+          "Lines": {
+            "37": 4,
+            "38": 4,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 4,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 4,
+            "47": 1,
+            "48": 1,
+            "49": 1,
+            "50": 4,
+            "51": 1,
+            "52": 1,
+            "53": 1,
+            "54": 4
+          },
+          "Branches": [
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 113,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 38,
+              "Offset": 111,
+              "EndOffset": 161,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 4
+            },
+            {
+              "Line": 42,
+              "Offset": 208,
+              "EndOffset": 210,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 42,
+              "Offset": 208,
+              "EndOffset": 258,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 4
+            },
+            {
+              "Line": 46,
+              "Offset": 284,
+              "EndOffset": 286,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 46,
+              "Offset": 284,
+              "EndOffset": 334,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 4
+            },
+            {
+              "Line": 50,
+              "Offset": 362,
+              "EndOffset": 364,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 50,
+              "Offset": 362,
+              "EndOffset": 412,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 4
+            }
+          ]
+        }
+      }
+    }
+  },
+  "RVTR.Lodging.WebRpc.dll": {
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebRpc/Program.cs": {
+      "RVTR.Lodging.WebRpc.Program": {
+        "System.Void RVTR.Lodging.WebRpc.Program::Main(System.String[])": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        },
+        "Microsoft.Extensions.Hosting.IHostBuilder RVTR.Lodging.WebRpc.Program::CreateHostBuilder(System.String[])": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebRpc/Services/LodgingService.cs": {
+      "RVTR.Lodging.WebRpc.LodgingService": {
+        "System.Threading.Tasks.Task`1<RVTR.Lodging.WebRpc.LodgingResponse> RVTR.Lodging.WebRpc.LodgingService::Book(RVTR.Lodging.WebRpc.LodgingRequest,Grpc.Core.ServerCallContext)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingService::.ctor(Microsoft.Extensions.Logging.ILogger`1<RVTR.Lodging.WebRpc.LodgingService>,RVTR.Lodging.DataContext.Repositories.IUnitOfWork)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebRpc/Startup.cs": {
+      "RVTR.Lodging.WebRpc.Startup": {
+        "System.Void RVTR.Lodging.WebRpc.Startup::ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.Startup::Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "29": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0
+          },
+          "Branches": [
+            {
+              "Line": 24,
+              "Offset": 9,
+              "EndOffset": 11,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 9,
+              "EndOffset": 20,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebRpc/obj/Debug/netcoreapp3.1/Lodging.cs": {
+      "RVTR.Lodging.WebRpc.LodgingReflection": {
+        "Google.Protobuf.Reflection.FileDescriptor RVTR.Lodging.WebRpc.LodgingReflection::get_Descriptor()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingReflection::.cctor()": {
+          "Lines": {
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0,
+            "29": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.WebRpc.LodgingRequest": {
+        "Google.Protobuf.MessageParser`1<RVTR.Lodging.WebRpc.LodgingRequest> RVTR.Lodging.WebRpc.LodgingRequest::get_Parser()": {
+          "Lines": {
+            "47": 0
+          },
+          "Branches": []
+        },
+        "Google.Protobuf.Reflection.MessageDescriptor RVTR.Lodging.WebRpc.LodgingRequest::get_Descriptor()": {
+          "Lines": {
+            "51": 0
+          },
+          "Branches": []
+        },
+        "Google.Protobuf.Reflection.MessageDescriptor RVTR.Lodging.WebRpc.LodgingRequest::pb::Google.Protobuf.IMessage.get_Descriptor()": {
+          "Lines": {
+            "56": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.WebRpc.LodgingRequest RVTR.Lodging.WebRpc.LodgingRequest::Clone()": {
+          "Lines": {
+            "73": 0,
+            "74": 0,
+            "75": 0
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.WebRpc.LodgingRequest::get_Name()": {
+          "Lines": {
+            "82": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::set_Name(System.String)": {
+          "Lines": {
+            "83": 0,
+            "84": 0,
+            "85": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean RVTR.Lodging.WebRpc.LodgingRequest::Equals(System.Object)": {
+          "Lines": {
+            "89": 0,
+            "90": 0,
+            "91": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean RVTR.Lodging.WebRpc.LodgingRequest::Equals(RVTR.Lodging.WebRpc.LodgingRequest)": {
+          "Lines": {
+            "94": 0,
+            "95": 0,
+            "96": 0,
+            "98": 0,
+            "99": 0,
+            "101": 0,
+            "102": 0,
+            "103": 0
+          },
+          "Branches": [
+            {
+              "Line": 95,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 95,
+              "Offset": 7,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 98,
+              "Offset": 20,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 101,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 101,
+              "Offset": 46,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 RVTR.Lodging.WebRpc.LodgingRequest::GetHashCode()": {
+          "Lines": {
+            "106": 0,
+            "107": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0
+          },
+          "Branches": [
+            {
+              "Line": 108,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 108,
+              "Offset": 19,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 109,
+              "Offset": 46,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String RVTR.Lodging.WebRpc.LodgingRequest::ToString()": {
+          "Lines": {
+            "116": 0,
+            "117": 0,
+            "118": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::WriteTo(Google.Protobuf.CodedOutputStream)": {
+          "Lines": {
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0
+          },
+          "Branches": [
+            {
+              "Line": 122,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 122,
+              "Offset": 17,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 54,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 126,
+              "Offset": 54,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 RVTR.Lodging.WebRpc.LodgingRequest::CalculateSize()": {
+          "Lines": {
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0
+          },
+          "Branches": [
+            {
+              "Line": 134,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 134,
+              "Offset": 19,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 137,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 137,
+              "Offset": 50,
+              "EndOffset": 68,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::MergeFrom(RVTR.Lodging.WebRpc.LodgingRequest)": {
+          "Lines": {
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0
+          },
+          "Branches": [
+            {
+              "Line": 145,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 145,
+              "Offset": 7,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 148,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 148,
+              "Offset": 28,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::MergeFrom(Google.Protobuf.CodedInputStream)": {
+          "Lines": {
+            "155": 0,
+            "157": 0,
+            "158": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0,
+            "163": 0,
+            "164": 0,
+            "167": 0,
+            "168": 0
+          },
+          "Branches": [
+            {
+              "Line": 157,
+              "Offset": 65,
+              "EndOffset": 3,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 11,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 158,
+              "Offset": 11,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 157,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::.ctor()": {
+          "Lines": {
+            "60": 0,
+            "62": 0,
+            "79": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::.ctor(RVTR.Lodging.WebRpc.LodgingRequest)": {
+          "Lines": {
+            "67": 0,
+            "68": 0,
+            "69": 0,
+            "70": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingRequest::.cctor()": {
+          "Lines": {
+            "44": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.WebRpc.LodgingResponse": {
+        "Google.Protobuf.MessageParser`1<RVTR.Lodging.WebRpc.LodgingResponse> RVTR.Lodging.WebRpc.LodgingResponse::get_Parser()": {
+          "Lines": {
+            "176": 0
+          },
+          "Branches": []
+        },
+        "Google.Protobuf.Reflection.MessageDescriptor RVTR.Lodging.WebRpc.LodgingResponse::get_Descriptor()": {
+          "Lines": {
+            "180": 0
+          },
+          "Branches": []
+        },
+        "Google.Protobuf.Reflection.MessageDescriptor RVTR.Lodging.WebRpc.LodgingResponse::pb::Google.Protobuf.IMessage.get_Descriptor()": {
+          "Lines": {
+            "185": 0
+          },
+          "Branches": []
+        },
+        "RVTR.Lodging.WebRpc.LodgingResponse RVTR.Lodging.WebRpc.LodgingResponse::Clone()": {
+          "Lines": {
+            "202": 0,
+            "203": 0,
+            "204": 0
+          },
+          "Branches": []
+        },
+        "System.String RVTR.Lodging.WebRpc.LodgingResponse::get_Message()": {
+          "Lines": {
+            "211": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::set_Message(System.String)": {
+          "Lines": {
+            "212": 0,
+            "213": 0,
+            "214": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean RVTR.Lodging.WebRpc.LodgingResponse::Equals(System.Object)": {
+          "Lines": {
+            "218": 0,
+            "219": 0,
+            "220": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean RVTR.Lodging.WebRpc.LodgingResponse::Equals(RVTR.Lodging.WebRpc.LodgingResponse)": {
+          "Lines": {
+            "223": 0,
+            "224": 0,
+            "225": 0,
+            "227": 0,
+            "228": 0,
+            "230": 0,
+            "231": 0,
+            "232": 0
+          },
+          "Branches": [
+            {
+              "Line": 224,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 224,
+              "Offset": 7,
+              "EndOffset": 14,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 227,
+              "Offset": 20,
+              "EndOffset": 22,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 227,
+              "Offset": 20,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 230,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 230,
+              "Offset": 46,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 RVTR.Lodging.WebRpc.LodgingResponse::GetHashCode()": {
+          "Lines": {
+            "235": 0,
+            "236": 0,
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0,
+            "241": 0,
+            "242": 0
+          },
+          "Branches": [
+            {
+              "Line": 237,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 237,
+              "Offset": 19,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 238,
+              "Offset": 46,
+              "EndOffset": 48,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 238,
+              "Offset": 46,
+              "EndOffset": 64,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.String RVTR.Lodging.WebRpc.LodgingResponse::ToString()": {
+          "Lines": {
+            "245": 0,
+            "246": 0,
+            "247": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::WriteTo(Google.Protobuf.CodedOutputStream)": {
+          "Lines": {
+            "250": 0,
+            "251": 0,
+            "252": 0,
+            "253": 0,
+            "254": 0,
+            "255": 0,
+            "256": 0,
+            "257": 0,
+            "258": 0
+          },
+          "Branches": [
+            {
+              "Line": 251,
+              "Offset": 17,
+              "EndOffset": 19,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 251,
+              "Offset": 17,
+              "EndOffset": 43,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 255,
+              "Offset": 54,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 255,
+              "Offset": 54,
+              "EndOffset": 71,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Int32 RVTR.Lodging.WebRpc.LodgingResponse::CalculateSize()": {
+          "Lines": {
+            "261": 0,
+            "262": 0,
+            "263": 0,
+            "264": 0,
+            "265": 0,
+            "266": 0,
+            "267": 0,
+            "268": 0,
+            "269": 0,
+            "270": 0
+          },
+          "Branches": [
+            {
+              "Line": 263,
+              "Offset": 19,
+              "EndOffset": 21,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 263,
+              "Offset": 19,
+              "EndOffset": 39,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 266,
+              "Offset": 50,
+              "EndOffset": 52,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 266,
+              "Offset": 50,
+              "EndOffset": 68,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::MergeFrom(RVTR.Lodging.WebRpc.LodgingResponse)": {
+          "Lines": {
+            "273": 0,
+            "274": 0,
+            "275": 0,
+            "277": 0,
+            "278": 0,
+            "279": 0,
+            "280": 0,
+            "281": 0
+          },
+          "Branches": [
+            {
+              "Line": 274,
+              "Offset": 7,
+              "EndOffset": 9,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 274,
+              "Offset": 7,
+              "EndOffset": 12,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 277,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 277,
+              "Offset": 28,
+              "EndOffset": 45,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::MergeFrom(Google.Protobuf.CodedInputStream)": {
+          "Lines": {
+            "284": 0,
+            "286": 0,
+            "287": 0,
+            "289": 0,
+            "290": 0,
+            "291": 0,
+            "292": 0,
+            "293": 0,
+            "296": 0,
+            "297": 0
+          },
+          "Branches": [
+            {
+              "Line": 286,
+              "Offset": 65,
+              "EndOffset": 3,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 287,
+              "Offset": 11,
+              "EndOffset": 15,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 287,
+              "Offset": 11,
+              "EndOffset": 35,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 286,
+              "Offset": 65,
+              "EndOffset": 67,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::.ctor()": {
+          "Lines": {
+            "189": 0,
+            "191": 0,
+            "208": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::.ctor(RVTR.Lodging.WebRpc.LodgingResponse)": {
+          "Lines": {
+            "196": 0,
+            "197": 0,
+            "198": 0,
+            "199": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.LodgingResponse::.cctor()": {
+          "Lines": {
+            "173": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "/home/autumn/rvtr/rvtr-api-lodging/aspnet/RVTR.Lodging.WebRpc/obj/Debug/netcoreapp3.1/LodgingGrpc.cs": {
+      "RVTR.Lodging.WebRpc.Lodging": {
+        "Google.Protobuf.Reflection.ServiceDescriptor RVTR.Lodging.WebRpc.Lodging::get_Descriptor()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        },
+        "Grpc.Core.ServerServiceDefinition RVTR.Lodging.WebRpc.Lodging::BindService(RVTR.Lodging.WebRpc.Lodging/LodgingBase)": {
+          "Lines": {
+            "45": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "System.Void RVTR.Lodging.WebRpc.Lodging::BindService(Grpc.Core.ServiceBinderBase,RVTR.Lodging.WebRpc.Lodging/LodgingBase)": {
+          "Lines": {
+            "55": 0,
+            "56": 0,
+            "57": 0
+          },
+          "Branches": [
+            {
+              "Line": 56,
+              "Offset": 8,
+              "EndOffset": 10,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 56,
+              "Offset": 8,
+              "EndOffset": 25,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void RVTR.Lodging.WebRpc.Lodging::.cctor()": {
+          "Lines": {
+            "13": 0,
+            "15": 0,
+            "16": 0,
+            "18": 0,
+            "19": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        }
+      },
+      "RVTR.Lodging.WebRpc.Lodging/LodgingBase": {
+        "System.Threading.Tasks.Task`1<RVTR.Lodging.WebRpc.LodgingResponse> RVTR.Lodging.WebRpc.Lodging/LodgingBase::Book(RVTR.Lodging.WebRpc.LodgingRequest,Grpc.Core.ServerCallContext)": {
+          "Lines": {
+            "36": 0,
+            "37": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
