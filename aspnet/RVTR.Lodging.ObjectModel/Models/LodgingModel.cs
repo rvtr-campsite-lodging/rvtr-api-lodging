@@ -9,9 +9,14 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class LodgingModel : IValidatableObject
   {
     public int Id { get; set; }
+
     public LocationModel Location { get; set; }
+
+    [Required]
     public string Name { get; set; }
+
     public IEnumerable<RentalModel> Rentals { get; set; }
+
     public IEnumerable<ReviewModel> Reviews { get; set; }
 
     /// <summary>
