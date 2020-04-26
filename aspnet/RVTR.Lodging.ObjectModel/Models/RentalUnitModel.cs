@@ -9,10 +9,18 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class RentalUnitModel : IValidatableObject
   {
     public int Id { get; set; }
+
     public IEnumerable<BathroomModel> Bathrooms { get; set; }
+
     public IEnumerable<BedroomModel> Bedrooms { get; set; }
+
+    [Required]
     public string Name { get; set; }
+
+    [Required]
     public int Occupancy { get; set; }
+
+    [Required]
     public string RentalUnitType { get; set; }
 
     /// <summary>
