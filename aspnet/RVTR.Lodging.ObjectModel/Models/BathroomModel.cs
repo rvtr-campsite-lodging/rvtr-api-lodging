@@ -9,7 +9,7 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class BathroomModel : IValidatableObject
   {
     public int Id { get; set; }
-    public int Fixture { get; set; }
+    public double Fixture { get; set; }
 
     /// <summary>
     /// Represents the _Bathroom_ `Validate` method
