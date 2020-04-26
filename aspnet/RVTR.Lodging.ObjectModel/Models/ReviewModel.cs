@@ -10,9 +10,17 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class ReviewModel : IValidatableObject
   {
     public int Id { get; set; }
+
+    [Required]
     public int AccountId { get; set; }
+
+    [Required]
     public string Comment { get; set; }
+
+    [Required]
     public DateTime DateCreated { get; set; }
+
+    [Required]
     public int Rating { get; set; }
 
     /// <summary>
