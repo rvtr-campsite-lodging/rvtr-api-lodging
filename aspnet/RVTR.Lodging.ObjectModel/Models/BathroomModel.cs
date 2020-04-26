@@ -9,6 +9,8 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class BathroomModel : IValidatableObject
   {
     public int Id { get; set; }
+
+    [Required]
     public double Fixture { get; set; }
 
     /// <summary>

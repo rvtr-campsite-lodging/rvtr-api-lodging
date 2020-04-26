@@ -9,8 +9,13 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class BedroomModel : IValidatableObject
   {
     public int Id { get; set; }
+
+    [Required]
+    public string BedType { get; set; }
+
+    [Required]
     public int Count { get; set; }
-    public string BedroomType { get; set; }
+
     /// <summary>
     /// Represents the _Bedroom_ `Validate` method
     /// </summary>
