@@ -4,18 +4,15 @@ using System.ComponentModel.DataAnnotations;
 namespace RVTR.Lodging.ObjectModel.Models
 {
   /// <summary>
-  /// Represents the _Lodging_ model
+  /// Represents the _Bathroom_ model
   /// </summary>
-  public class LodgingModel : IValidatableObject
+  public class BathroomModel : IValidatableObject
   {
     public int Id { get; set; }
-    public LocationModel Location { get; set; }
-    public string Name { get; set; }
-    public IEnumerable<RentalModel> Rentals { get; set; }
-    public IEnumerable<ReviewModel> Reviews { get; set; }
+    public int Fixture { get; set; }
 
     /// <summary>
-    /// Represents the _Lodging_ `Validate` model
+    /// Represents the _Bathroom_ `Validate` method
     /// </summary>
     /// <param name="validationContext"></param>
     /// <returns></returns>
