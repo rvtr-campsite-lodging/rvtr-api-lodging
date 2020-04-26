@@ -9,8 +9,12 @@ namespace RVTR.Lodging.ObjectModel.Models
   public class RentalModel : IValidatableObject
   {
     public int Id { get; set; }
+
+    [Required]
     public string Name { get; set; }
+
     public RentalUnitModel RentalUnit { get; set; }
+
     /// <summary>
     /// Represents the _Rental_ `Validate` method
     /// </summary>
