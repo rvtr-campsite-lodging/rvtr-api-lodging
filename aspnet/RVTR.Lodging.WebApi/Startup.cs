@@ -19,7 +19,7 @@ namespace RVTR.Lodging.WebApi
     }
 
     public void ConfigureServices(IServiceCollection services)
-    {
+    { 
       services.AddDbContext<LodgingDbContext>(options => options.UseInMemoryDatabase("InMemoryDb"));
 
       services.AddControllers();
