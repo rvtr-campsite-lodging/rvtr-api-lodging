@@ -1,26 +1,30 @@
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace RVTR.Lodging.ObjectModel.Models
 {
   /// <summary>
-  /// Represents the _Lodging_ model
+  /// Represents the _Review_ model
   /// </summary>
-  public class LodgingModel : IValidatableObject
+  public class ReviewModel : IValidatableObject
   {
     public int Id { get; set; }
 
-    public LocationModel Location { get; set; }
+    [Required]
+    public int AccountId { get; set; }
 
     [Required]
-    public string Name { get; set; }
+    public string Comment { get; set; }
 
-    public IEnumerable<RentalModel> Rentals { get; set; }
+    [Required]
+    public DateTime DateCreated { get; set; }
 
-    public IEnumerable<ReviewModel> Reviews { get; set; }
+    [Required]
+    public int Rating { get; set; }
 
     /// <summary>
-    /// Represents the _Lodging_ `Validate` model
+    /// Represents the _Review_ `Validate` method
     /// </summary>
     /// <param name="validationContext"></param>
     /// <returns></returns>

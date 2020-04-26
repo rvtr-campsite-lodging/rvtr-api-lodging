@@ -110,7 +110,7 @@ jobs:
       - name: pack_script
         run: echo 'pack script'
 
-name: integration
+name: build
 
 on:
   pull_request:
