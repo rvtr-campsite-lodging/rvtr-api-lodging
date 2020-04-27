@@ -8,54 +8,54 @@ using RVTR.Lodging.ObjectModel.Models;
 
 namespace RVTR.Lodging.WebApi.Controllers
 {
+
   /// <summary>
-  /// API controller for location model interaction with storage domain
+  /// Api controller for interacting with Rentals
   /// </summary>
+  /// <returns>List of Rentals</returns>
   [ApiController]
   [EnableCors()]
   [Route("[controller]/[action]")]
-  public class LocationController : ControllerBase
+  public class RentalController : ControllerBase
   {
-    private readonly ILogger<LodgingController> _logger;
+    private readonly ILogger<RentalController> _logger;
     private readonly IUnitOfWork _unitOfWork;
 
-    public LocationController(ILogger<LodgingController> logger, IUnitOfWork unitOfWork)
+    public RentalController(ILogger<RentalController> logger, IUnitOfWork unitOfWork)
     {
       _logger = logger;
       _unitOfWork = unitOfWork;
     }
 
-
     /// <summary>
-    /// Get method for all locationss
+    /// Get method for all Rentals
     /// </summary>
-    /// <returns>List of locations</returns>
+    /// <returns>List of Rentals</returns>
     [HttpGet]
-    public async Task<IEnumerable<LocationModel>> Get()
+    public async Task<IEnumerable<RentalModel>> Get()
     {
-      return await Task.FromResult<IEnumerable<LocationModel>>(_unitOfWork.LocationRepository.Select());
+      return await Task.FromResult<IEnumerable<RentalModel>>(_unitOfWork.RentalRepository.Select());
     }
-
     /// <summary>
-    /// Get method for specific location
+    /// Get method for specific RentalUnit
     /// </summary>
     /// <param name="id"></param>
     /// <returns>Single Duration</returns>
     [HttpGet("{id}")]
-    public async Task<LocationModel> Get(int id)
+    public async Task<RentalModel> Get(int id)
     {
-      return await Task.FromResult<LocationModel>(_unitOfWork.LocationRepository.Select(id));
+      return await Task.FromResult<RentalModel>(_unitOfWork.RentalRepository.Select(id));
     }
 
     /// <summary>
-    /// /// Post method for location
+    /// Post method for Rental
     /// </summary>
     /// <param name="model"></param>
     /// <returns>Returns an action result describing the post action</returns>
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody]LocationModel model)
+    public async Task<IActionResult> Post([FromBody]RentalModel model)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.LocationRepository.Insert(model));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalRepository.Insert(model));
       if (success)
       {
         return Ok();
@@ -64,14 +64,14 @@ namespace RVTR.Lodging.WebApi.Controllers
     }
 
     /// <summary>
-    /// Put method for location
+    /// Put method for RentalUnit
     /// </summary>
     /// <param name="model"></param>
     /// <returns>Request success or failure</returns>
     [HttpPut]
-    public async Task<IActionResult> Put([FromBody]LocationModel model)
+    public async Task<IActionResult> Put([FromBody]RentalModel model)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.LocationRepository.Update(model));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalRepository.Update(model));
             if (success)
       {
         return Ok();
@@ -80,14 +80,14 @@ namespace RVTR.Lodging.WebApi.Controllers
     }
 
     /// <summary>
-    /// Delete method for locations
+    /// Delete method for Rentals
     /// </summary>
     /// <param name="model"></param>
     /// <returns>Request success or failure</returns>
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int model)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.LocationRepository.Delete(model));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalRepository.Delete(model));
       if (success)
       {
         return Ok();

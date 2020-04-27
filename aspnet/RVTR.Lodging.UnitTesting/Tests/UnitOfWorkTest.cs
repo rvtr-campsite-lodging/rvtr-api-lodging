@@ -21,15 +21,15 @@ namespace RVTR.Lodging.UnitTesting.Tests
             var options = new DbContextOptionsBuilder<LodgingDbContext>()
                       .UseInMemoryDatabase(databaseName: "Add_writes_to_database")
                       .Options;
-          BedModel _bm = new BedModel() { BedId = 1, Size = "King", NumberOfBeds = 1 };
+          BedroomModel _bm = new BedroomModel() { Id = 1, BedType = "King", Count = 1 };
 
             using (var ldb = new LodgingDbContext(options))
             {
                 var sut = new UnitOfWork(ldb);
 
-                Assert.True(sut.Beds.Insert(_bm));
+                Assert.True(sut.BedroomRepository.Insert(_bm));
                 sut.Commit();
-                Assert.True(sut.Beds.Select().ToList().Count == 1);
+                Assert.True(sut.BedroomRepository.Select().ToList().Count == 1);
             }
         }
     }

@@ -12,53 +12,53 @@ namespace RVTR.Lodging.WebApi.Controllers
 {
 
   /// <summary>
-  /// Api controller for interacting with reviews
+  /// Api controller for interacting with RentalUnits
   /// </summary>
-  /// <returns>List of Reviews</returns>
+  /// <returns>List of RentalUnits</returns>
   [ApiController]
   [EnableCors()]
   [Route("[controller]/[action]")]
-  public class ReviewController : ControllerBase
+  public class RentalUnitController : ControllerBase
   {
-    private readonly ILogger<ReviewController> _logger;
+    private readonly ILogger<RentalUnitController> _logger;
     private readonly IUnitOfWork _unitOfWork;
 
-    public ReviewController(ILogger<ReviewController> logger, IUnitOfWork unitOfWork)
+    public RentalUnitController(ILogger<RentalUnitController> logger, IUnitOfWork unitOfWork)
     {
       _logger = logger;
       _unitOfWork = unitOfWork;
     }
 
     /// <summary>
-    /// Get method for all Reviews
+    /// Get method for all RentalUnits
     /// </summary>
-    /// <returns>List of Review</returns>
+    /// <returns>List of RentalUnits</returns>
     [HttpGet]
-    public async Task<IEnumerable<ReviewModel>> Get()
+    public async Task<IEnumerable<RentalUnitModel>> Get()
     {
-      return await Task.FromResult<IEnumerable<ReviewModel>>(_unitOfWork.ReviewRepository.Select());
+      return await Task.FromResult<IEnumerable<RentalUnitModel>>(_unitOfWork.RentalUnitRepository.Select());
     }
 
     /// <summary>
-    /// Get method for specific review
+    /// Get method for specific RentalUnit
     /// </summary>
     /// <param name="id"></param>
-    /// <returns>Single Review</returns>
+    /// <returns>Single Duration</returns>
     [HttpGet("{id}")]
-    public async Task<ReviewModel> GetOne(int id)
+    public async Task<RentalUnitModel> GetOne(int id)
     {
-      return await Task.FromResult<ReviewModel>(_unitOfWork.ReviewRepository.Select(id));
+      return await Task.FromResult<RentalUnitModel>(_unitOfWork.RentalUnitRepository.Select(id));
     }
 
     /// <summary>
-    /// Post method for Review
+    /// Post method for RentalUnit
     /// </summary>
-    /// <param name="Review"></param>
+    /// <param name="Room"></param>
     /// <returns>Returns an action result describing the post action</returns>
     [HttpPost]
-    public async Task<IActionResult> Post([FromBody]ReviewModel review)
+    public async Task<IActionResult> Post([FromBody]RentalUnitModel room)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.ReviewRepository.Insert(review));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalUnitRepository.Insert(room));
       if(success)
       {
         return Ok();
@@ -67,14 +67,14 @@ namespace RVTR.Lodging.WebApi.Controllers
     }
 
     /// <summary>
-    /// Put method for review
+    /// Put method for RentalUnit
     /// </summary>
-    /// <param name="review"></param>
+    /// <param name="room"></param>
     /// <returns>Request success or failure</returns>
     [HttpPut]
-    public async Task<IActionResult> Put([FromBody]ReviewModel review)
+    public async Task<IActionResult> Put([FromBody]RentalUnitModel room)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.ReviewRepository.Update(review));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalUnitRepository.Update(room));
       if(success)
       {
         return Ok();
@@ -83,14 +83,14 @@ namespace RVTR.Lodging.WebApi.Controllers
     }
 
     /// <summary>
-    /// Delete method for review
+    /// Delete method for RentalUnits
     /// </summary>
     /// <param name="id"></param>
     /// <returns>Request success or failure</returns>
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-      var success = await Task.FromResult<bool>(_unitOfWork.ReviewRepository.Delete(id));
+      var success = await Task.FromResult<bool>(_unitOfWork.RentalUnitRepository.Delete(id));
       if(success)
       {
         return Ok();

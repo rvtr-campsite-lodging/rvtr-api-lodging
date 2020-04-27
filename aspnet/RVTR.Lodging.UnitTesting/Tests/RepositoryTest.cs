@@ -14,7 +14,7 @@ namespace RVTR.Lodging.UnitTesting.Tests
     /// </summary>
     public class Repository_Test
     {
-        private BedModel _bm = new BedModel() { BedId = 1, Size = "King", NumberOfBeds = 1 };
+        private BedroomModel _bm = new BedroomModel() { Id = 1, BedType = "King", Count = 1 };
 
         /// <summary>
         /// Test the delete functionality of the generic repository by inserting then deleting from the repository
@@ -28,11 +28,11 @@ namespace RVTR.Lodging.UnitTesting.Tests
 
             using (var ldb = new LodgingDbContext(options))
             {
-                var sut = new Repository<BedModel>(ldb);
-                List<BedModel> bedList = sut.Select().ToList();
+                var sut = new Repository<BedroomModel>(ldb);
+                List<BedroomModel> bedList = sut.Select().ToList();
                 Assert.True(sut.Insert(_bm));
                 ldb.SaveChanges();
-                Assert.True(sut.Delete(_bm.BedId));
+                Assert.True(sut.Delete(_bm.Id));
                 ldb.SaveChanges();
                 Assert.True(0 == sut.Select().ToList().Count());
             }
@@ -50,8 +50,8 @@ namespace RVTR.Lodging.UnitTesting.Tests
 
             using (var ldb = new LodgingDbContext(options))
             {
-                var sut = new Repository<BedModel>(ldb);
-                List<BedModel> bedList = sut.Select().ToList();
+                var sut = new Repository<BedroomModel>(ldb);
+                List<BedroomModel> bedList = sut.Select().ToList();
                 Assert.True(0 == sut.Select().ToList().Count());
                 Assert.True(sut.Insert(_bm));
                 ldb.SaveChanges();
@@ -72,14 +72,14 @@ namespace RVTR.Lodging.UnitTesting.Tests
 
             using (var ldb = new LodgingDbContext(options))
             {
-                var sut = new Repository<BedModel>(ldb);
-                List<BedModel> bedList = sut.Select().ToList();
+                var sut = new Repository<BedroomModel>(ldb);
+                List<BedroomModel> bedList = sut.Select().ToList();
                 Assert.True(sut.Insert(_bm));
                 ldb.SaveChanges();
-                _bm.NumberOfBeds = 10;
+                _bm.Count = 10;
                 sut.Update(_bm);
                 ldb.SaveChanges();
-                Assert.True(10 == sut.Select().ToList().First().NumberOfBeds);
+                Assert.True(10 == sut.Select().ToList().First().Count);
             }
         }
 
@@ -95,12 +95,12 @@ namespace RVTR.Lodging.UnitTesting.Tests
 
             using (var ldb = new LodgingDbContext(options))
             {
-                var sut = new Repository<BedModel>(ldb);
-                List<BedModel> bedList = sut.Select().ToList();
+                var sut = new Repository<BedroomModel>(ldb);
+                List<BedroomModel> bedList = sut.Select().ToList();
                 Assert.True(sut.Insert(_bm));
-                BedModel _bm2 = sut.Select(1);
+                BedroomModel _bm2 = sut.Select(1);
                 ldb.SaveChanges();
-                Assert.True(_bm2.Size == sut.Select().ToList().First().Size);
+                Assert.True(_bm2.BedType == sut.Select().ToList().First().BedType);
             }
         }
     }

@@ -19,7 +19,7 @@ namespace RVTR.Lodging.WebApi
     }
 
     public void ConfigureServices(IServiceCollection services)
-    { 
+    {
       services.AddDbContext<LodgingDbContext>(options => options.UseInMemoryDatabase("InMemoryDb"));
 
       services.AddControllers();
@@ -35,6 +35,8 @@ namespace RVTR.Lodging.WebApi
       });
 
       services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+      services.AddSwaggerDocument();
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -52,6 +54,9 @@ namespace RVTR.Lodging.WebApi
       {
         endpoints.MapControllers();
       });
+
+      app.UseOpenApi();
+      app.UseSwaggerUi3();
     }
   }
 }
