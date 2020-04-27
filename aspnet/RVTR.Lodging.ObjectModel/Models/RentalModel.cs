@@ -4,25 +4,19 @@ using System.ComponentModel.DataAnnotations;
 namespace RVTR.Lodging.ObjectModel.Models
 {
   /// <summary>
-  /// Represents the _Location_ model
+  /// Represents the _Rental_ model
   /// </summary>
-  public class LocationModel : IValidatableObject
+  public class RentalModel : IValidatableObject
   {
     public int Id { get; set; }
 
-    public AddressModel Address { get; set; }
-
     [Required]
-    public string Latitude { get; set; }
+    public string Name { get; set; }
 
-    [Required]
-    public string Locale { get; set; }
-
-    [Required]
-    public string Longitude { get; set; }
+    public RentalUnitModel RentalUnit { get; set; }
 
     /// <summary>
-    /// Represents the _Location_ `Validate` method
+    /// Represents the _Rental_ `Validate` method
     /// </summary>
     /// <param name="validationContext"></param>
     /// <returns></returns>
