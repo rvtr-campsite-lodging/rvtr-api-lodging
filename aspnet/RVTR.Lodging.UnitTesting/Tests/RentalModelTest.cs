@@ -16,6 +16,7 @@ namespace RVTR.Lodging.UnitTesting.Tests
         {
           Id = 0,
           Name = "name",
+          Images = new List<ImageModel>(),
           RentalUnit = new RentalUnitModel()
         }
       }

@@ -15,6 +15,8 @@ namespace RVTR.Lodging.ObjectModel.Models
     [Required]
     public string Name { get; set; }
 
+    public List<ImageModel> Images { get; set; }
+
     public IEnumerable<RentalModel> Rentals { get; set; }
 
     public IEnumerable<ReviewModel> Reviews { get; set; }
@@ -27,3 +29,4 @@ namespace RVTR.Lodging.ObjectModel.Models
     public IEnumerable<ValidationResult> Validate(ValidationContext validationContext) => new List<ValidationResult>();
   }
 }
+

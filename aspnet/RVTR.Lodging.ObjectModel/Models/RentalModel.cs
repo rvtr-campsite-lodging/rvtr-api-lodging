@@ -13,6 +13,8 @@ namespace RVTR.Lodging.ObjectModel.Models
     [Required]
     public string Name { get; set; }
 
+    public List<ImageModel> Images { get; set; }
+
     public RentalUnitModel RentalUnit { get; set; }
 
     /// <summary>
